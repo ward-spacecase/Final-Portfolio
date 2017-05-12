@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crack | The | Code</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Monoton');
+        @import url('https://fonts.googleapis.com/css?family=Inconsolata');
+        #guessed span {
+            padding-left: 10px;
+        }
+        body  {
+            background: url('hack.jpg') top center;
+        }
+        #start, #guess {
+            font-family: 'Monoton';
+            width: 250px;
+            font-size: 30px;
+           margin-top: 120px;
+            color: #67F383;
+            background-color: #086213;
+            border: none;
+        }
+        button:focus,#guess:hover,#start:hover{outline:none; background-color: black}
+        .game {
+            font-size: 20px;
+            word-spacing: 10px;
+            letter-spacing: 10px;
+            font-family: 'Monoton', cursive;
+            text-align: center;
+            border: 1px solid #086213;
+            width: 800px;
+            height: 600px;
+            color: #67F383;
+            background-color: #222222;
+            margin: 100px auto;
+        }
+        .game h3 {
+            font-size: 30px;
+            letter-spacing: 10px;
+            word-spacing: 5px;
+            font-family: 'Inconsolata';
+            color: #086213;
+        }
+        #guess-in {
+            font-size: 30px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<div class="game">
+    <h1>CRACK THE CODE</h1><br><br>
+    <h3>GUESS THE NUMBER IN THE FEWEST AMOUNT OF TRIES AS POSSIBLE!</h3>
+    <button onclick="newGame()" id="start">Start Game</button>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="rockpapsci.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<div layout="column" style="min-height:100vh" ng-cloak>
+
+    <section layout="row" flex>
+
+        <md-sidenav
+                class="md-sidenav-left"
+                md-component-id="left"
+                md-is-locked-open="$mdMedia('gt-md')"
+                md-whiteframe="4">
+
+            <md-toolbar md-theme="docs-dark">
+                <img src="img/icon.jpg" class="avatarBig">
+                <h1 id="brand-lettering"><span class="yuge">J</span>ust Do It</h1>
+
+            </md-toolbar>
+            <md-content class="scrollable-nav-content">
+                    <h1 style="text-align: left">Lists: </h1>
+                    <md-list>
+                <md-list-item layout-align="center end" ng-repeat="list in userFire.lists">
+                    <md-button ng-click="vm.setActiveList(list)">
+                    {{list.listTitle}}
+                        <md-icon  class="material-icons">list</md-icon>
+                    </md-button>
+                    <md-divider></md-divider>
+                </md-list-item>
+                        <md-list-item layout-align="center end">
+                            <md-button id="add-list-button" ng-click="vm.showPrompt($event)">
+                                Add Lists
+                                <md-icon  class="material-icons">add box</md-icon>
+                            </md-button>
+                        </md-list-item>
+            </md-list>
+
+            </md-content>
+
+        </md-sidenav>
+
+        <!--                            END SIDEBAR                             -->
+
+
+            <div flex layout="column" class="background-color" layout-align="top">
+                <md-toolbar md-theme="docs-dark" layout="row">
+
+                    <div class="md-toolbar-tools">
+                        <h1 style="padding-left: 20px;">Dashboard</h1>
+                        <!-- fill up the space between left and right area -->
+                        <span flex></span>
+
+                        <md-menu md-position-mode="target-right target">
+                            <md-icon aria-label="Open demo menu"
+                                     class="material-icons md-icon-button"
+                                     ng-click="$mdOpenMenu($event)"
+                                     style="font-size: 44px; width: 44px; height: 44px;">
+
+                                account_circle
+                            </md-icon>
+
+
+                            <!--  START DROPDOWN MENU CONTENT      -->
+                            <md-menu-content width="6">
+                                <md-menu-item>
+                                    <span style="float: left" ng-if="vm.user.displayName">{{vm.user.displayName}}</span>
+                                    <span style="float: left" ng-if="!vm.user.displayName">{{vm.user.email}}</span>
+                                    <span style="float: right;"><img ng-src="{{vm.user.photoURL}}" id="profileImg"></span>
+                                </md-menu-item>
+                                <md-menu-item>
+                                    <md-button>
+                                            Settings
+                                        <md-icon class="material-icons">settings</md-icon>
+                                    </md-button>
+                                </md-menu-item>
+
+                                <md-menu-item>
+                                    <md-button ng-click="vm.logout()">
+                                            Logout
+                                        <md-icon class="material-icons">exit_to_app</md-icon>
+                                    </md-button>
+                                </md-menu-item>
+                            </md-menu-content>
+                            <!--MENU CONTENT-->
+
+                        </md-menu>
+
+
+                    </div>
+
+                </md-toolbar>
+
+                <!--                        END TOOLBAR                        -->
+
+
+                <md-content layout="row" class="background-color">
+                   <md-card class="cards">
+                       <h1>Done</h1>
+                       <h2>You have completed {{userFire.completed | zeroToNo}} todos!</h2>
+                   </md-card>
+                    <md-card class="cards">
+                       <h1>ToDo</h1>
+                       <h2>You have {{userFire.leftTodo | zeroToNo}} todos left!</h2>
+                   </md-card>
+
+                </md-content>
+
+                <!--                    END HEADING CONTENT                     -->
+
+                <md-content layout="row" class="background-color" ng-show="userFire.activeList">
+                    <md-card class="cards-large">
+                        <h1>{{userFire.activeList.listTitle | uppercase}}</h1>
+                        <md-list>
+                            <md-list-item layout-align="center end" ng-repeat="listItem in userFire.activeList.items">
+                                <md-button ng-class="vm.strikeBool(listItem)">
+                                    <md-button class="md-fab md-mini md-primary" md-theme="docs-dark">
+                                        <md-icon ng-click="vm.delete(listItem, $event)" class="material-icons">delete</md-icon>
+                                    </md-button>
+                                    {{listItem.item}}
+                                    <md-button class="md-fab md-mini md-accent" ng-click="vm.checkoff(listItem)"  md-theme="docs-dark">
+                                    <md-icon class="material-icons">done</md-icon>
+                                    </md-button>
+                                </md-button>
+                                <md-divider></md-divider>
+                            </md-list-item>
+                            <md-list-item layout-align="center end">
+                                <md-button id="add-item-button" ng-click="vm.showItemPrompt($event)">
+                                    Add Todo
+                                    <md-icon class="material-icons">add box</md-icon>
+                                </md-button>
+                            </md-list-item>
+                        </md-list>
+                    </md-card>
+                </md-content>
+
+                <!--                    END MAIN LIST CARD                       -->
+            </div>
+
+
+
+    </section>
+
+</div>

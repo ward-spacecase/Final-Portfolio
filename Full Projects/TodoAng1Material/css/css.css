@@ -1,0 +1,127 @@
+
+body {
+
+    background: #3ca2e0;
+    text-align: center;
+    color: #fff;
+
+}
+
+.avatarBig {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    margin-top: 60px;
+}
+.avatar {
+    margin: 0 auto;
+    width: 90px;
+    height: 90px
+}
+
+.avatar, #brand-lettering{
+    display:inline;
+    margin:0;
+}
+#brand-lettering {
+    padding-left: 10px;
+}
+
+.navbar-avatar {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.background-color {
+    background-color: #3ca2e0;
+}
+
+#whitef {
+    max-width: 700px;
+    background-color: white;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);}
+h1 .yuge {
+    font-size: 60px;
+}
+#whitef h1 {
+    color: #3ca2e0;
+    font-size: 30px;
+
+}
+#license-footer {
+    background-color: #2089c9;
+    width: 100%;
+    color:white;
+    align-self: flex-end;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: small;
+    border-top: 1px solid #104463;
+}
+
+#whitef .login-register-header {
+    color: black;
+    margin: 0;
+    font-size: 50px;
+}
+#google-button {
+    padding: 0;
+    max-width: 191px;
+    max-height: 46px;
+}
+#loginErrors{
+    background-color: rgba(255,0,0, .2);
+    color: rgba(255,0,0, .9);
+
+}
+
+#profileImg {
+    border-radius: 100%;
+    max-width: 48px;
+    max-height: 48px;
+}
+md-list .md-button {
+    color: inherit;
+    font-weight: 500;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    height: 48px;
+}
+md-list .md-button.selected {
+    background-color: #03a9f4;
+}
+
+md-sidenav  md-list {
+    padding: 0px 0px 8px 0px;
+}
+.cards {
+    color: white;
+    width: 50%;
+    background-color:#2089c9;
+}
+.cards-large {
+    color: white;
+    width: 100%;
+    background-color:#2089c9;
+}
+.cards-large .md-button {
+    text-align:center;
+}
+.cards-large .md-button.md-fab.md-mini {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+#add-list-button {
+     background-color: #e5f2f9;
+}
+#add-list-button:hover {
+
+    background-color: #c5e4f7;
+}
+
+button.md-button.md-ink-ripple.strikethrough {
+  text-decoration: line-through;
+    color: rgba(0,0,0, 0.5);
+}

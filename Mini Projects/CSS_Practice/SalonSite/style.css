@@ -1,0 +1,103 @@
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: slategrey url(images/background.jpg) fixed top left no-repeat;
+}
+
+.navbar {
+    margin: 0 auto;
+    background-color: rgba(255,255,255, 0.7);
+    padding: 10px 0 10px 0;
+    width: 800px;
+}
+.navbar span {
+    color: #FF69B4;
+    font-family: 'Prompt', 'Comic Sans MS';
+    margin-left: -5px;
+    width: 25%;
+    padding: 10px 60px 10px 50px;
+    opacity: 1.0;
+    -webkit-transition: background-color 0.6s;
+    transition: background-color 0.6s;
+}
+#home {
+    margin-left: 1px;
+    padding-right: 69px;
+}
+#button {
+    border-radius: 2px;
+    transition-duration: 0.7s;
+    font-size: 20px;
+
+    background-color: lightpink;
+    color: white;
+
+    padding: 0 10px 0 10px;
+}
+#button:hover {
+    background-color: hotpink;
+}
+
+.navbar span:hover {
+    background-color: rgba(230, 230, 230, 0.8);
+}
+.navbar a {
+    text-decoration: none;
+}
+.head {
+    text-align: center;
+    margin: 0 auto;
+    height: 100px;
+    font-size: 30px;
+}
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.top {
+    background-color: rgba(255,255,255, 0.9);
+    width: 800px;
+    text-align: center;
+    margin: 20px auto;
+    color: deeppink;
+}
+.top span {
+    color: hotpink;
+
+}
+.content h1 {
+    margin-left: 20px;
+    color: deeppink;
+    font-size: 100px;
+}
+.content h2 {
+    margin-top: 200px;
+    text-align: center;
+    color: hotpink;
+    font-size: 40px;
+}
+.content h2 span{
+   color: #D6B2C4;
+}
+
+.top .top1 {
+    margin-left: 20px;
+    float: left;
+
+}
+.top .top2 {
+    margin-right: 20px;
+  float: right;
+}
+#mu {
+    display: inline;
+    color: white;
+}
+hr {
+    border-top: solid;
+    color: white;
+    width: 80%;
+    height: 1px;
+}

@@ -1,0 +1,158 @@
+@leaguespeedblue: #3f87c2;
+@deeperblue: #3974a6;
+@sidebarblue: #273038;
+@navhighlight: #181d22;
+@mainfont: 'Asap', sans-serif; //import this
+@bodygray: #eeeef2;
+@subheadergray: #dde1ee;
+@lightgrayborder: #f5f5f8;
+@myPaddingLeft: 20px;
+
+.vertCenter() {
+  display:flex;
+  align-items: center;
+}
+
+body, html {
+  font-family: @mainfont;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background-color: @bodygray;
+
+  .button {
+    padding: 5px 15px;
+    background-color: @deeperblue;
+   color: white;
+    border: .2px solid white;
+    border-radius: 15px;
+    &:hover {
+      background-color: #3f87c2;
+    }
+    &:active {
+      position: relative;
+      top: 1px;
+    }
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  .header {
+    .vertCenter();
+    height: 60px;
+    background-color: @leaguespeedblue;
+    .icon {
+      .vertCenter();
+      justify-content: center;
+      font-size: 30px;
+      color: white;
+      background-color: @deeperblue;
+      width: 60px;
+      height: 100%;
+    }
+    .otherHeaderPart {
+      padding-left: @myPaddingLeft;
+      span {
+        color: white;
+        margin-left: 10px;
+
+      }
+    }
+  }
+
+  .goRight() {
+    float: right;
+  }
+  .bottomArea {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    .sideNav {
+      text-align: center;
+      background-color: @sidebarblue;
+      min-width: 60px;
+      height: 100%;
+      color: white;
+      i {
+        margin-top: 20px;
+        display: block;
+      }
+    }
+
+    .mainSection {
+      width: 100%;
+      background-color: @bodygray;
+
+    }
+    .subHeader {
+      .vertCenter();
+      @myPaddingLeft;
+      height: 60px;
+      width: 100%;
+      background-color: @subheadergray;
+      span {
+        padding: 0 15px;
+      }
+
+    }
+    .oddCheckBoxBar {
+      .vertCenter();
+      justify-content: space-between;
+      background-color: @deeperblue;
+      height: 60px;
+      width: calc(~"100% - 30px");
+      margin: 10px 15px;
+      .checkBox {
+        color: white;
+        margin-left: 10px;
+        box-sizing: content-box;
+
+        .checker {
+          font-size: 60px;
+        }
+
+      }
+      .otherButtons {
+        margin-right: 20px;
+      }
+    }
+
+  }
+
+  .schedule {
+    box-sizing: content-box;
+    width: calc(~"100% - 30px");
+    margin: 0 15px;
+    .weekHeader {
+      background-color: #c5dbec;
+      height: 25px;
+      padding: 7px 0 0 20px;
+      margin-top: 20px;
+
+    }
+    .gameContainer {
+      margin-left: 25px;
+    }
+
+    .teams {
+      margin-top: 20px;
+
+    }
+    .gameTime {
+      color: grey;
+      font-size: 13px;
+      margin-bottom: 20px;
+
+    }
+    .aLine {
+      background-color: #999999;
+      height: 3px;
+      width: 100%;
+      border-radius: 1px;
+
+    }
+
+  }
+}

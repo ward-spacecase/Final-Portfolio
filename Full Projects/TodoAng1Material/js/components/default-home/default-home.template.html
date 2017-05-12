@@ -1,0 +1,150 @@
+
+<div layout="column">
+    <div layout="row" md-theme="docs-dark">
+        <md-toolbar>
+
+            <div class="md-toolbar-tools">
+                <img src="img/icon.jpg" class="navbar-avatar">
+                <span>Just Do It</span>
+
+                <!-- fill up the space between left and right area -->
+                <span flex></span>
+
+                <md-button>
+                    <md-icon class="material-icons">info</md-icon>
+                </md-button>
+            </div>
+
+        </md-toolbar>
+    </div>
+</div>
+    <div layout="column" flex id="content" role="main">
+
+        <md-content layout="vertical" flex id="content" style="height: calc(100vh - 114px)">
+
+            <div layout="row" layout-align="center center" class="background-color" layout-fill>
+                <md-whiteframe class="md-whiteframe-z1" id="whitef" layout="column" flex="60" layout-padding>
+                    <div layout="row" layout-align="center center">
+                    <img src="img/icon.jpg" class="avatar">
+                    <h1 id="brand-lettering"><span class="yuge">J</span>ust Do It</h1>
+                    </div>
+
+
+                    <!--LOGIN-->
+                    <md-content md-theme="docs-dark" ng-hide="vm.loginBool" >
+
+                        <form name="loginForm">
+
+                            <h1 class="login-register-header">Login</h1>
+                        <div layout="row" layout-align="center center">
+
+                            <md-input-container flex="70" flex-sm="100">
+                                <label>Email</label>
+                                <input name="email" type="email" required ng-model="vm.user.email">
+                                <div ng-messages="loginForm.email.$error">
+                                    <div ng-message="required">This is required!</div>
+                                </div>
+
+                            </md-input-container>
+                        </div>
+                        <div layout="row" layout-align="center center">
+                            <md-input-container flex="70" flex-sm="100">
+                                <label>Password</label>
+                                <input name="password" type="password" ng-minlength="8" ng-model="vm.user.password" required>
+                                <div ng-messages="loginForm.password.$error">
+                                    <div ng-message="required">This is required!</div>
+                                    <div ng-message="minlength">Must be at least 8 characters long!</div>
+                                </div>
+                            </md-input-container>
+
+                        </div>
+
+                        </form>
+
+                        <div ng-show="vm.waiting" layout="row" layout-align="center center">
+                            <md-progress-circular md-mode="indeterminate" class="md-accent"></md-progress-circular>
+                        </div>
+                        <md-input-container layout-align="center center">
+                            <div layout="row" layout-sm="column" layout-margin>
+                                <md-button class="md-raised md-accent" flex="50" flex-sm="100" ng-click="vm.login()" ng-disabled="loginForm.$invalid">Login</md-button>
+                                <md-button ng-click="vm.loginBool = !vm.loginBool" class="md-raised" flex="50" flex-sm="100">Register</md-button>
+                            </div>
+                        </md-input-container>
+                        <hr flex="40">
+                        <md-input-container layout-align="center center">
+                            <div layout="row" layout-align="center center">
+                                <md-button id="google-button" ng-click="vm.registerWithGoogle()"><img src="img/btn_google_signin_light_normal_web.png"></md-button>
+                            </div>
+                        </md-input-container>
+                        <div id="loginErrors" layout="row" ng-show="vm._loginError"><p>
+                            {{vm._loginError}}
+                        </p>
+                        </div>
+
+                    </md-content>
+
+
+                    <!--REGISTER-->
+                    <md-content md-theme="docs-dark" ng-show="vm.loginBool">
+                        <form name="registerForm">
+                        <h1 class="login-register-header">Register</h1>
+                        <div layout="row" layout-align="center center">
+                            <md-input-container flex="70" flex-sm="100">
+                                <label>Email</label>
+                                <input name="email" type="email" required ng-model="vm.user.email">
+                                <div ng-messages="registerForm.email.$error">
+                                    <div ng-message="required">This is required!</div>
+                                    <div ng-message="minlength">Must be at least 8 characters long!</div>
+                                </div>
+                            </md-input-container>
+                        </div>
+                        <div layout="row" layout-align="center center">
+                            <md-input-container flex="70" flex-sm="100">
+                                <label>Password</label>
+                                <input name="password" type="password" required ng-model="vm.user.password">
+                                <div ng-messages="registerForm.password.$error">
+                                    <div ng-message="required">This is required!</div>
+                                </div>
+                            </md-input-container>
+                        </div>
+                        <div layout="row" layout-align="center center">
+                            <md-input-container flex="70" flex-sm="100">
+                                <label>Confirm Password</label>
+                                <input name="confirmpassword" compare-to="vm.user.password" ng-model="vm.user.confirm" type="password" required>
+                                <div ng-messages="registerForm.confirmpassword.$error">
+                                    <div ng-message="required">This is required!</div>
+                                    <div ng-message="compareTo">Must match first password!</div>
+                                </div>
+                            </md-input-container>
+                        </div>
+
+                        </form>
+                        <div ng-show="vm.waiting" layout="row" layout-align="center center">
+                            <md-progress-circular md-mode="indeterminate" class="md-accent"></md-progress-circular>
+                        </div>
+                        <md-input-container layout-align="center center">
+                            <div layout="row" layout-sm="column" layout-margin>
+                                <md-button ng-click="vm.loginBool = !vm.loginBool" class="md-raised" flex="50" flex-sm="100"">Login</md-button>
+                                <md-button class="md-raised md-accent" flex="50" flex-sm="100" ng-click="vm.register()" ng-disabled="registerForm.$invalid">Register</md-button>
+                            </div>
+                        </md-input-container>
+                        <hr flex="40">
+                        <md-input-container layout-align="center center">
+                            <div layout="row" layout-align="center center">
+                                <md-button id="google-button" ng-click="vm.registerWithGoogle()"><img src="img/btn_google_signin_light_normal_web.png"></md-button>
+                            </div>
+                        </md-input-container>
+                        <div id="loginErrors" layout="row" ng-show="vm._loginError">
+                            <p> {{vm._loginError}}</p>
+                        </div>
+                    </md-content>
+
+                </md-whiteframe>
+
+            </div>
+
+        </md-content>
+        <div id="license-footer">
+            ToDo app powered by Angular. Customized with Angular Material Design. Thanks @Google. Also something about Copyright: ©2015-2018.
+        </div>
+    </div>

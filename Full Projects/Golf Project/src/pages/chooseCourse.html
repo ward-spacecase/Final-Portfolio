@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Golf</title>
+
+    <link rel="stylesheet" href="../styles/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/chooseCourse.css">
+    <link rel="stylesheet" href="../styles/bootstrap/font-awesome-4.6.3/css/font-awesome.min.css">
+<style>
+    hr.style18 {
+        border-bottom: 2px solid #486648;
+    }
+    .player {
+        text-align: left;
+        background-color: #ffe9c8;
+        width: 100%;
+        padding: 10px 0;
+        margin: 5px;
+    }
+    .player:hover {
+        background-color: #fff9c8;
+    }
+    .player:hover .fa-times {
+        color: red;
+    }
+    .fa-times:hover {
+        cursor: pointer;
+    }
+    .add-player {
+        background-color: #fffcde;
+    }
+
+</style>
+
+</head>
+
+<body>
+
+
+
+    <div class="container">
+
+        <div class="modal fade" id="myModal" role="dialog"  data-backdrop="static" data-keyboard="false">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h4 class="modal-title">Choose Course: </h4>
+
+                        </div>
+                        <div class="modal-body">
+
+                        </div>
+                        <div class="modal-footer">
+                            <button id="choose" type="button" class="btn btn-default disabled">Next</button>
+                        </div>
+                    </div>
+
+                </div>
+        </div>
+    </div>
+
+
+<div class="hold"></div>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBE3YDOqmKDhBA5tef5zooBKltLuwcDwcw&libraries=places"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../js/chooseCourse.js"></script>
+<script src="../js/players.js"></script>
+</body>
+</html>

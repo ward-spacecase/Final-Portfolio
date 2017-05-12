@@ -1,0 +1,44 @@
+
+@import url("animate.css");
+
+.navbar {
+    position: fixed !important;
+    text-align: right;
+    bottom: 0 !important;
+    right: 25px;
+    padding: 5vh 25px 3vh 5px;
+    width: fit-content;
+}
+.navbar span {
+    font-family: 'Prompt', 'Comic Sans MS';
+    margin-left: -5px;
+    height: 10vh;
+    padding: 3.5vh 50px 4vh 50px;
+    width: 100px;
+    color: #ffffff;
+    opacity: 1.0;
+    -webkit-transition: background-color 0.6s;
+    transition: background-color 0.6s;
+
+}
+.navbar .themes, .navbar .themes img {
+    transition-duration: 2s;
+}
+.navbar .themes img {
+    padding: 0;
+    vertical-align: middle;
+    margin-right: 40px;
+}
+.navbar span:hover {
+    background-color: #4E5454;
+}
+.navbar .themes:hover{
+    background-color: inherit;
+}
+.navbar .themes:hover img {
+    transform: rotate(280deg);
+}
+.xNav {
+    padding-right: 20px;
+}
+

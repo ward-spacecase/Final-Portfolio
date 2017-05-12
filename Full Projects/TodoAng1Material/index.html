@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Todo 2.0</title>
+      <meta name="mobile-web-app-capable" content="yes">
+
+    <!--Dependancies-->
+    <link rel="stylesheet" href="css/css.css">
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.js"></script>
+    <script src="node_modules/angular-aria/angular-aria.js"></script>
+    <script src="node_modules/angular-material/angular-material.js"></script>
+    <link rel="stylesheet" href="node_modules/angular-material/angular-material.css">
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-aria.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-messages.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+    <script src="js/app.module.js"></script>
+    <script src="js/other/ui.routes.js"></script>
+    <script src="js/services/authentication.service.js"></script>
+    <script src="js/components/default-home/default-home.component.js"></script>
+    <script src="js/directives/validate.directive.js"></script>
+    <script src="js/components/dashboard-home/dashboard-home.component.js"></script>
+    <script src="js/services/accessUser.service.js"></script>
+    <script src="js/services/database.service.js"></script>
+
+
+    <!--Step #1: Add Firebase and AngularFire library dependencies-->
+    <!-- Firebase    --> <script src="//www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+    <!-- AngularFire --> <script src="//cdn.firebase.com/libs/angularfire/2.0.2/angularfire.min.js"></script>
+
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCj-WuOcQWqcvyKCTJIn4EPUMGjBXEGpHk",
+            authDomain: "todo-app-837f6.firebaseapp.com",
+            databaseURL: "https://todo-app-837f6.firebaseio.com",
+            storageBucket: "todo-app-837f6.appspot.com",
+            messagingSenderId: "805434516028"
+        };
+        firebase.initializeApp(config);
+
+        //get reference to database
+        var database = firebase.database();
+    </script>
+</head>
+<body ng-app="myApp">
+
+
+<div ui-view></div>
+
+</body>
+</html>

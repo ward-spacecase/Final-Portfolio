@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Lancelot');
+
+body {
+    min-height: 100vh;
+    font-family: 'Overwatch';
+    color: white;
+    letter-spacing: 15px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    background: green url('../images/golf.jpg') center center fixed no-repeat;
+    background-size: cover;
+}
+.background {
+    position: absolute;
+    background-color: rgba(0,0,0,0.6);
+    width: 100vw;
+    min-height: 100vh;
+}
+.left {
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.3);
+    position: relative;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+.name h1 {
+    font-size: 100px;
+    color: #b28956;
+}
+ body h1 {
+    font-size: 80px;
+
+}
+.left p {
+    font-size: 30px;
+}
+.bg-success {
+    background-color: #356d00;
+    width: 100vw;
+}
+.container-fluid {
+    padding: 0;
+}
+.btn-default {
+    transition-duration: .3s;
+    padding: 10px;
+    background: transparent;
+    border: 3px white solid;
+    color: white;
+    font-size: 25px;
+    margin-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+*:focus {outline:none !important}
+.border-left {
+    position: absolute;
+
+    height: 0%;
+    width: 0;
+    border-left: solid 2px white;
+}
+.border-right {
+    position: absolute;
+bottom: 0;
+    height: 0;
+    width: 0;
+    border-right: solid 2px white;
+}
+@font-face { font-family: "Overwatch"; src: url("https://us.battle.net/forums/static/fonts/bignoodletoo/bignoodletoo.woff") format('woff'); }
+.small-text {
+    color: #b28956;
+    font-size: 35px;
+    text-align: center;
+}
+.footer p {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 5px;
+    color: #b28956;
+}

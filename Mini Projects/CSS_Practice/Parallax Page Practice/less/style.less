@@ -1,0 +1,132 @@
+@import "variables";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  font-family: 'Noto Sans', sans-serif;
+
+}
+
+.header-nav {
+  height: 70px;
+  background-color: @main-color;
+  position: fixed;
+  width: 100%;
+}
+
+.parallax {
+  text-align: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+#parallax1 {
+  padding-top: 300px;
+  background-image: url('../img/parallax1.jpg');
+
+  .content {
+    color: white;
+
+    h1 {
+      font-size: 80px;
+    }
+    p {
+      font-size: 30px;
+    }
+    .btn {
+      -moz-border-radius:16px;
+      -webkit-border-radius:16px;
+      border-radius:16px;
+      display:inline-block;
+      cursor:pointer;
+      font-size:20px;
+      padding:19px 28px;
+      text-decoration:none;
+      &:focus{
+        outline: 0;
+      }
+    }
+    .shop-btn{
+      background-color: @bright;
+
+      color:#ffffff;
+
+      margin-right: 40px;
+
+    }
+    .learn-btn {
+      background-color:#ffffff;
+
+      color:#7a7a7a;
+
+    }
+
+
+
+
+
+  }
+}
+#parallax2 {
+  text-align: left;
+
+  background-image: url('../img/parallax2.jpg');
+  color: white;
+}
+
+.whitesection {
+  background-color: white;
+
+  .innerparent {
+    text-align: center;
+    font-size: 30px;
+    padding: 30px 0;
+    color: white;
+    background-color: @bright;
+  }
+
+  height: auto;
+  width: 100%;
+
+
+  .otherinner{
+
+    color: black;
+    width: 100%;
+    display: inline-flex;
+
+    .left{
+      display: inline;
+      width: 50%;
+      .hill {
+        max-width: 50vw;
+      }
+    }
+    .right{
+      display: inline;
+      width: 50%;
+      padding: 40px;
+      h3 {
+        margin-left: 80px;
+        font-size: 30px;
+      }
+      p {
+        font-size: 15px;
+        margin-left: 80px;
+        text-align: left;
+        max-width: 50%;
+      }
+    }
+  }
+
+  #footer {
+    padding: 100px 0;
+    height: 300px;
+  }
+}

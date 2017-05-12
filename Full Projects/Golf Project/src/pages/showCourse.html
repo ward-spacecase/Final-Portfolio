@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Golf</title>
+
+    <link rel="stylesheet" href="../styles/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/chooseCourse.css">
+    <link rel="stylesheet" href="../styles/bootstrap/font-awesome-4.6.3/css/font-awesome.min.css">
+    <style>
+      .bg-success {
+          background-color: #356d00;
+          width: 100vw;
+      }
+      .container-fluid {
+          padding: 0;
+      }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="container-fluid">
+        <nav class="navbar bg-success">
+            <img src="../images/logo_teetime.png" width="200px">
+        </nav>
+
+    </div>
+    <div class="container">
+        <table class="table table-hover table-inverse" style="color: white">
+            <thead>
+            <tr style="background-color: #DBA451; color: black">
+                <th>Hole</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+                <th>Out</th>
+            </tr>
+            </thead>
+            <tbody id="table1-body">
+
+            </tbody>
+        </table>
+        <table class="table table-hover table-inverse" style="color: white">
+            <thead>
+            <tr style="background-color: #DBA451; color: black">
+                <th>Hole</th>
+                <th>10</th>
+                <th>11</th>
+                <th>12</th>
+                <th>13</th>
+                <th>14</th>
+                <th>15</th>
+                <th>16</th>
+                <th>17</th>
+                <th>18</th>
+                <th>In</th>
+                <th>Total</th>
+            </tr>
+            </thead>
+            <tbody id="table2-body">
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../js/showCourse.js"></script>
+</body>
+</html>

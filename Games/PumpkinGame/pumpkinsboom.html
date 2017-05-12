@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Decorate The Stage</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+<style>
+
+	body{width: 100%; height:auto;}
+	#container{width: 1000px; height:750px; background-image:url(images/h_background.png); position:relative; cursor:pointer; overflow:hidden;}
+	.pumpkin1{width: 140px; height: 127px; background-image:url(images/pumpkin1.png); position:absolute;}
+	.pumpkin2{width: 140px; height: 127px; background-image:url(images/pumpkin2.png); position:absolute;}
+	.pumpkin3{width: 140px; height: 127px; background-image:url(images/pumpkin3.png); position:absolute;}
+	.pumpkin4{width: 140px; height: 127px; background-image:url(images/pumpkin4.png); position:absolute;}
+	.follow{width: 140px; height: 127px; position:absolute; z-index: 1000; background-image:url(images/pumpkinguide.png);}
+	#explosion{ position:absolute; width: 140px; height: 0; z-index: 999;}
+	a{ padding: 15px; background-color: #4E7456; color: #FFFFFF; text-align: center; display:block; width: 150px; float:left; text-decoration:none; border-radius: 5px; margin-left: 15px;}
+	#btns{overflow: hidden;clear: both; margin-bottom: 5px;position: absolute;z-index: 998;height: 60px;width: 1000px; background-color: #0B3135; padding-top: 15px;}
+
+</style>
+
+</head>
+
+
+<body>
+
+<img style="display:none;" src="pumkinExplode/boom1.png" />
+<img style="display:none;" src="pumkinExplode/boom2.png" />
+<img style="display:none;" src="pumkinExplode/boom3.png" />
+<img style="display:none;" src="pumkinExplode/boom4.png" />
+<img style="display:none;" src="pumkinExplode/boom5.png" />
+<img style="display:none;" src="pumkinExplode/boom6.png" />
+<img style="display:none;" src="pumkinExplode/boom7.png" />
+<img style="display:none;" src="pumkinExplode/boom8.png" />
+<img style="display:none;" src="pumkinExplode/boom9.png" />
+<img style="display:none;" src="pumkinExplode/boom10.png" />
+<img style="display:none;" src="pumkinExplode/boom11.png" />
+<img style="display:none;" src="pumkinExplode/boom12.png" />
+<img style="display:none;" src="pumkinExplode/boom13.png" />
+<img style="display:none;" src="pumkinExplode/boom14.png" />
+<img style="display:none;" src="pumkinExplode/boom15.png" />
+<img style="display:none;" src="pumkinExplode/boom16.png" />
+<img style="display:none;" src="pumkinExplode/boom17.png" />
+
+<div id="explosion"></div>
+<div id="btns"><a id="thebutton" href="javascript: explodetool()">Explode Pumpkins</a></div>
+<!-- We need our explosion div to go here.-->
+<div id="container" onClick="addPumpkin(event)">
+	
+</div>
+<div id="followpumpkin" class="follow"></div>
+<script src="fixPumpkin.js"></script>
+</body>
+</html>

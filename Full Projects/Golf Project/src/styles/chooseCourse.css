@@ -1,0 +1,28 @@
+
+body {
+    color: black;
+    margin: 0;
+    padding: 0;
+    background: green url('../images/golf.jpg') center center fixed no-repeat;
+    background-size: cover;
+}
+.modal-body {
+    text-align: center;
+}
+*:focus {outline:none !important}
+.light {
+    background-color: #EFC078;
+    color: #444444;
+}
+
+td input {
+    color: black;
+    width: 40px;
+}
+.player {
+    color: black;
+    background-color: #ffe9c8;
+}
+td span {
+    padding-right: 30px !important;
+}

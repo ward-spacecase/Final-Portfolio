@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  font-family: 'Noto Sans', sans-serif;
+}
+.header-nav {
+  height: 70px;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+}
+.parallax {
+  text-align: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+#parallax1 {
+  padding-top: 300px;
+  background-image: url('../img/parallax1.jpg');
+}
+#parallax1 .content {
+  color: white;
+}
+#parallax1 .content h1 {
+  font-size: 80px;
+}
+#parallax1 .content p {
+  font-size: 30px;
+}
+#parallax1 .content .btn {
+  -moz-border-radius: 16px;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 19px 28px;
+  text-decoration: none;
+}
+#parallax1 .content .btn:focus {
+  outline: 0;
+}
+#parallax1 .content .shop-btn {
+  background-color: #ff7700;
+  color: #ffffff;
+  margin-right: 40px;
+}
+#parallax1 .content .learn-btn {
+  background-color: #ffffff;
+  color: #7a7a7a;
+}
+#parallax2 {
+  text-align: left;
+  background-image: url('../img/parallax2.jpg');
+  color: white;
+}
+.whitesection {
+  background-color: white;
+  height: auto;
+  width: 100%;
+}
+.whitesection .innerparent {
+  text-align: center;
+  font-size: 30px;
+  padding: 30px 0;
+  color: white;
+  background-color: #ff7700;
+}
+.whitesection .otherinner {
+  color: black;
+  width: 100%;
+  display: inline-flex;
+}
+.whitesection .otherinner .left {
+  display: inline;
+  width: 50%;
+}
+.whitesection .otherinner .left .hill {
+  max-width: 50vw;
+}
+.whitesection .otherinner .right {
+  display: inline;
+  width: 50%;
+  padding: 40px;
+}
+.whitesection .otherinner .right h3 {
+  margin-left: 80px;
+  font-size: 30px;
+}
+.whitesection .otherinner .right p {
+  font-size: 15px;
+  margin-left: 80px;
+  text-align: left;
+  max-width: 50%;
+}
+.whitesection #footer {
+  padding: 100px 0;
+  height: 300px;
+}

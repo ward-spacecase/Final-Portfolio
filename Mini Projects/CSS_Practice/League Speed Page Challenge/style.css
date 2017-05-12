@@ -1,0 +1,152 @@
+body,
+html {
+  font-family: 'Asap', sans-serif;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background-color: #eeeef2;
+}
+body .button,
+html .button {
+  padding: 5px 15px;
+  background-color: #3974a6;
+  color: white;
+  border: .2px solid white;
+  border-radius: 15px;
+}
+body .button:hover,
+html .button:hover {
+  background-color: #3f87c2;
+}
+body .button:active,
+html .button:active {
+  position: relative;
+  top: 1px;
+}
+body .button:focus,
+html .button:focus {
+  outline: 0;
+}
+body .header,
+html .header {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background-color: #3f87c2;
+}
+body .header .icon,
+html .header .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: white;
+  background-color: #3974a6;
+  width: 60px;
+  height: 100%;
+}
+body .header .otherHeaderPart,
+html .header .otherHeaderPart {
+  padding-left: 20px;
+}
+body .header .otherHeaderPart span,
+html .header .otherHeaderPart span {
+  color: white;
+  margin-left: 10px;
+}
+body .bottomArea,
+html .bottomArea {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+body .bottomArea .sideNav,
+html .bottomArea .sideNav {
+  text-align: center;
+  background-color: #273038;
+  min-width: 60px;
+  height: 100%;
+  color: white;
+}
+body .bottomArea .sideNav i,
+html .bottomArea .sideNav i {
+  margin-top: 20px;
+  display: block;
+}
+body .bottomArea .mainSection,
+html .bottomArea .mainSection {
+  width: 100%;
+  background-color: #eeeef2;
+}
+body .bottomArea .subHeader,
+html .bottomArea .subHeader {
+  display: flex;
+  align-items: center;
+  @my PaddingLeft;
+  height: 60px;
+  width: 100%;
+  background-color: #dde1ee;
+}
+body .bottomArea .subHeader span,
+html .bottomArea .subHeader span {
+  padding: 0 15px;
+}
+body .bottomArea .oddCheckBoxBar,
+html .bottomArea .oddCheckBoxBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3974a6;
+  height: 60px;
+  width: calc(100% - 30px);
+  margin: 10px 15px;
+}
+body .bottomArea .oddCheckBoxBar .checkBox,
+html .bottomArea .oddCheckBoxBar .checkBox {
+  color: white;
+  margin-left: 10px;
+  box-sizing: content-box;
+}
+body .bottomArea .oddCheckBoxBar .checkBox .checker,
+html .bottomArea .oddCheckBoxBar .checkBox .checker {
+  font-size: 60px;
+}
+body .bottomArea .oddCheckBoxBar .otherButtons,
+html .bottomArea .oddCheckBoxBar .otherButtons {
+  margin-right: 20px;
+}
+body .schedule,
+html .schedule {
+  box-sizing: content-box;
+  width: calc(100% - 30px);
+  margin: 0 15px;
+}
+body .schedule .weekHeader,
+html .schedule .weekHeader {
+  background-color: #c5dbec;
+  height: 25px;
+  padding: 7px 0 0 20px;
+  margin-top: 20px;
+}
+body .schedule .gameContainer,
+html .schedule .gameContainer {
+  margin-left: 25px;
+}
+body .schedule .teams,
+html .schedule .teams {
+  margin-top: 20px;
+}
+body .schedule .gameTime,
+html .schedule .gameTime {
+  color: grey;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+body .schedule .aLine,
+html .schedule .aLine {
+  background-color: #999999;
+  height: 3px;
+  width: 100%;
+  border-radius: 1px;
+}

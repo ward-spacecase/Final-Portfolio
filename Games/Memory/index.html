@@ -1,0 +1,48 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Data Type Game</title>
+    <style>
+        #container{ background-color: #333333; width: 100%; height:auto;}
+        .card{ width: 180px; height: 220px; float:left; margin-left: 15px; margin-top: 10px; border-radius: 3px; cursor: pointer; background-image: url(images/card.png); font-size: 18px;}
+        #gamecontainer{width: 800px; height: 500px; margin: 50px auto; overflow: hidden; clear:both; border-radius: 5px;}
+        h3{text-align:center; font-size: 30px; margin-top: 40px;}
+        span{display:block; text-align: center; padding-top: 80px; }
+        h5{margin-top: 10px; text-align:center; margin-bottom: 0;}
+        h4{text-align: center; margin-top: 10px;}
+
+    </style>
+</head>
+
+<body>
+
+<h3>Data Type Game</h3>
+<h5>Score</h5>
+<h4 id="myscore">0</h4>
+
+<div id="container">
+    <div id="gamecontainer">
+
+
+        <div id="item1" class="card" onClick="turnCard(this.id, 'Array', 1)"><span></span></div>
+        <div id="item2" class="card" onClick="turnCard(this.id, 'var cars = [ Saab, Volvo, Ford]', 1)"><span></span></div>
+
+        <div id="item3" class="card" onClick="turnCard(this.id, 'String', 2)"><span></span></div>
+        <div id="item4" class="card" onClick="turnCard(this.id, 'var engine = &quotV8&quot', 2)"><span></span></div>
+
+        <div id="item5" class="card" onClick="turnCard(this.id, 'Number', 3)"><span></span></div>
+        <div id="item6" class="card" onClick="turnCard(this.id, 'var wheels = 4', 3)"><span></span></div>
+
+        <div id="item7" class="card" onClick="turnCard(this.id, 'Object', 4)"><span></span></div>
+        <div id="item8" class="card" onClick="turnCard(this.id, 'var bodyType = {doorNumber: 2; trunk: true;}', 4)"><span></span></div>
+
+
+
+
+    </div>
+</div>
+
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="game.js"></script>
+</body>
+</html>

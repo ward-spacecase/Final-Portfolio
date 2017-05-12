@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+body {
+    text-align: center;
+    font-family: 'Source Sans Pro';
+    margin: 0;
+    padding: 0;
+}
+.container {
+    margin: 30px auto;
+    border: black 1px solid;
+    width: 50vw;
+    height: 125vh;
+}
+.buttons {
+    margin: 70px auto;
+    width: 75%;
+    display: flex;
+    margin-bottom: 70px;
+}
+.buttons .button {
+    transition-duration: 0.7s;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    font-size: 12px;
+    padding: 10px 0;
+    text-align: center;
+    width: 20%;
+    border: grey 1px solid;
+    margin: 0 auto;
+}
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+#red {
+    color: red;
+    border: red 1px solid;
+}
+#red:hover {
+    background-color: rgba(255, 0, 0, 0.3);
+}
+#blue {
+    color: darkblue;
+    border: darkblue 1px solid;
+}
+#blue:hover {
+    background-color: rgba(0, 0, 255, 0.3);
+}
+#purple {
+    color: purple;
+    border: purple 1px solid;
+}
+#purple:hover {
+    background-color: rgba(128, 0, 128, 0.3);
+}
+hr {
+    width: 80%;
+}
+h1{
+    color: grey;
+    font-weight: normal;
+    font-size: 40px;
+    text-decoration: none;
+    letter-spacing: 4px;
+}
+.circle {
+    background: url('profile.jpg') top center no-repeat;
+    background-size: 350px auto;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: dimgrey solid 4px;
+}
+.circle img {
+    margin: 0 auto;
+}
+hr.small {
+    width: 10%;
+}
+h1.job {
+    margin-top: 30px;
+    font-size: 20px;
+}
