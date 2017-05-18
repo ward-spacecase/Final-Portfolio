@@ -2,193 +2,388 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Andrew Ward | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <title>Portfolio | Andrew Ward</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <style>
         @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
 
         body {
             font-family: 'Lato', sans-serif;
             background-color: #4c4d54;
-            height: 100vh;
             color: white;
         }
         .portfolioContainer {
-            min-width: 1200px;
-            display:flex;
-            align-content: flex-start;
-            background-color: #0D87A1;
-            width: 90%;
-            height: 50%;
-            margin: 0 auto;
-            transition-duration: 2s;
             margin-top: 40px;
             border-radius: 15px;
+            height: 400px;
+            background-color: #0D87A1;
             box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
         }
-        .itemBox {
+        .item-box {
+            position: relative;
             text-align: center;
-            height: 80%;
-            width: 100px;
+            height: 100%;
             background-color: #0c2f67;
-            margin: 30px;
-            margin-left: 20px;
-            justify-content: space-around;
-            flex-grow: 1;
-            border-radius: 20px;
-            box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-        }
-        .proLink {
-            height: 40%;
-            width: 70%;
-            margin: 0 auto;
-            margin-top: 20px;
-            background-color: rgba(132, 205, 90, .07);
-        }
-        a:link, a:visited, a:hover, a:active {
-            text-decoration: none;
+            border-radius: 15px;
             color: white;
         }
+        .item-box h1 {
+            padding-top: 10px;
+        }
+        .each-col {
+            height: 90%;
+        }
+        .proLink {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            margin: 0 auto;
+            border-radius: 15px;
+            background-color: #082048;
+            height: 50px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .proLink a:hover {
+            color: white;
+            text-decoration: none;
+        }
+        .proLink .disabled {
+            color: #337ab7;
+        }
+        @media (max-width: 1199px) {
+            .portfolioContainer {
+                height: 800px;
+            }
+            .each-col{
+                height: 45%;
+                margin-bottom: 20px;
+            }
+        }
+        @media (max-width: 767px) {
+            .portfolioContainer {
+                height: 1200px;
+            }
+            .each-col{
+                height: 22%;
+            }
+        }
+
 
     </style>
 </head>
-<body>
+<body class="container">
+    <div class="portfolioContainer row">
+        <div class="col-lg-3 col-sm-6 each-col">
+            <div class="item-box">
+                <h1>Golf Scorecard</h1>
+                <h6>Working Golf Scorecard using a golf course API</h6>
 
-<div class="portfolioContainer">
+                <img src="images/golf.png" width="200px">
 
-    <a class="itemBox" href="Full%20Projects/Golf%20Project/index.html">
-        <h1>Golf Scorecard</h1>
-        <h6>Working Golf Scorecard using a golf course API</h6>
-        <div class="proLink">
+                <div class="proLink">
+                    <a href="Full%20Projects/Golf%20Project/index.html">
+                        <span>[View]</span>
+                    </a>
+                    <a href="https://github.com/ward-spacecase/Final-Portfolio/tree/master/Full%20Projects/Golf%20Project">
+                        <span>[Code]</span>
+                    </a>
 
-        </div>
-    </a>
-    <a class="itemBox" href="Full%20Projects/Portfolio%20Page/index.html">
-        <h1>Portfolio Page</h1>
-        <h6>A page I made for a portfolio</h6>
-        <div class="proLink">
-
-        </div>
-
-    </a>
-    <a class="itemBox" href="Games/Crack%20the%20Code/rps.html">
-        <h1>Crack the Code</h1>
-        <h6>Guess the number game</h6>
-        <div class="proLink">
-
+                </div>
+            </div>
         </div>
 
-    </a>
-    <a class="itemBox" href="Games/Memory/index.html">
-        <h1>Memory Card Game</h1>
-        <h6>Memory game with javascript data-types</h6>
-        <div class="proLink">
+        <div class="col-lg-3 col-sm-6 each-col">
+            <div class="item-box">
+                <h1>Portfolio Page</h1>
+                <h6>A page I made for a portfolio</h6>
 
+                <img src="images/portfolio.png" width="200px">
+
+                <div class="proLink">
+                    <a href="Full%20Projects/Portfolio%20Page/index.html">
+                        <span>[View]</span>
+                    </a>
+                    <a href="https://github.com/ward-spacecase/Final-Portfolio/tree/master/Full%20Projects/Portfolio%20Page">
+                        <span>[Code]</span>
+                    </a>
+                </div>
+            </div>
         </div>
 
-    </a>
+        <div class="col-lg-3 col-sm-6 each-col">
+            <div class="item-box">
+                <h1>Crack the Code</h1>
+                <h6>Guess the number game</h6>
 
-</div>
+                <img src="images/codegame.png" width="200px">
 
-<div class="portfolioContainer">
-
-    <a class="itemBox" href="Mini%20Projects/CSS_Practice/SalonSite/index.html">
-        <h1>Salon Site</h1>
-        <h6>Class competition to build a salon website</h6>
-        <div class="proLink">
-
-        </div>
-    </a>
-    <a class="itemBox" href="Mini%20Projects/JS_Practice/jQueryProfile/stuff.html">
-        <h1>Business Card</h1>
-        <h6>jQuery practice changing colors</h6>
-        <div class="proLink">
-
+                <div class="proLink">
+                    <a href="Games/Crack%20the%20Code/rps.html">
+                        <span>[View]</span>
+                    </a>
+                    <a href="https://github.com/ward-spacecase/Final-Portfolio/tree/master/Games/Crack%20the%20Code">
+                        <span>[Code]</span>
+                    </a>
+                </div>
+            </div>
         </div>
 
-    </a>
-    <a class="itemBox" href="Mini%20Projects/CSS_Practice/Copy-a-Picture%20Sass%20Practice/index.html">
-        <h1>Modal Challenge</h1>
-        <h6>CSS challenge to duplicate a visual in HTML</h6>
-        <div class="proLink">
+        <div class="col-lg-3 col-sm-6 each-col">
+            <div class="item-box">
+                <h1>Memory Game</h1>
+                <h6>Memory game with javascript data-types</h6>
 
+                <img src="images/memory.png" width="200px">
+
+                <div class="proLink">
+                    <a href="Games/Memory/index.html">
+                        <span>[View]</span>
+                    </a>
+                    <a href="https://github.com/ward-spacecase/Final-Portfolio/tree/master/Games/Memory">
+                        <span>[Code]</span>
+                    </a>
+                </div>
+            </div>
         </div>
 
-    </a>
-    <a class="itemBox" href="Mini%20Projects/CSS_Practice/League%20Speed%20Page%20Challenge/index.html">
-        <h1>League Speed</h1>
-        <h6>League speed design page practice</h6>
-        <div class="proLink">
+    </div>
 
+    <div class="portfolioContainer row">
+        <div class="col-lg-3 col-sm-6 each-col">
+            <div class="item-box">
+                <h1>Pumpkin Game Remix</h1>
+                <h6>Race the clock to destroy all the pumpkins</h6>
+
+                <img src="images/pumpkin2.png" width="200px">
+
+                <div class="proLink">
+                    <a href="Games/PumpkinGameRemix/pumpkintest.html">
+                        <span>[View]</span>
+                    </a>
+                    <a href="https://github.com/ward-spacecase/Final-Portfolio/tree/master/Games/PumpkinGameRemix">
+                        <span>[Code]</span>
+                    </a>
+                </div>
+            </div>
         </div>
 
-    </a>
+        <div class="col-lg-3 col-sm-6 each-col">
+            <div class="item-box">
+                <h1>Business Card</h1>
+                <h6>jQuery practice changing colors</h6>
 
-</div>
-<div class="portfolioContainer">
+                <img src="images/card.png" width="200px">
 
-    <a class="itemBox" href="Full%20Projects/TodoAng1Material/index.html">
-        <h1>Todo App</h1>
-        <h6>TODO app made with Angular 1 material design</h6>
-        <div class="proLink">
-
-        </div>
-    </a>
-    <a class="itemBox" href="Games/WordGuess/strings.html">
-        <h1>Word Guess Game</h1>
-        <h6>Guess the word game made in jQuery</h6>
-        <div class="proLink">
-
-        </div>
-
-    </a>
-    <a class="itemBox" href="Games/Who'sBeenNaughty&Nice/game.html">
-        <h1>Santa Game</h1>
-        <h6>Choose who goes on the nice list in this game</h6>
-        <div class="proLink">
-
+                <div class="proLink">
+                    <a href="Mini%20Projects/JS_Practice/jQueryProfile/stuff.html">
+                        <span>[View]</span>
+                    </a>
+                    <a href="https://github.com/ward-spacecase/Final-Portfolio/tree/master/Mini%20Projects/JS_Practice/jQueryProfile">
+                        <span>[Code]</span>
+                    </a>
+                </div>
+            </div>
         </div>
 
-    </a>
-    <a class="itemBox" href="Mini%20Projects/CSS_Practice/Parallax%20Page%20Practice/index.html">
-        <h1>Parallax Page</h1>
-        <h6>Made https://boostedboards.com/ into a parallax page</h6>
-        <div class="proLink">
+        <div class="col-lg-3 col-sm-6 each-col">
+            <div class="item-box">
+                <h1>Modal Challenge</h1>
+                <h6>CSS challenge to duplicate a visual in HTML</h6>
 
+                <img src="images/modal.png" width="200px">
+
+                <div class="proLink">
+                    <a href="Mini%20Projects/CSS_Practice/Copy-a-Picture%20Sass%20Practice/index.html">
+                        <span>[View]</span>
+                    </a>
+                    <a href="https://github.com/ward-spacecase/Final-Portfolio/tree/master/Mini%20Projects/CSS_Practice/Copy-a-Picture%20Sass%20Practice">
+                        <span>[Code]</span>
+                    </a>
+                </div>
+            </div>
         </div>
 
-    </a>
+        <div class="col-lg-3 col-sm-6 each-col">
+            <div class="item-box">
+                <h1>League Speed</h1>
+                <h6>League speed design page practice</h6>
 
-</div>
+                <img src="images/league.png" width="200px">
 
-<div class="portfolioContainer">
-
-    <a class="itemBox" href="Games/PumpkinGame/pumpkinsboom.html">
-        <h1>Pumpkin Game</h1>
-        <h6>Add and destroy pumpkins in this game</h6>
-        <div class="proLink">
-
-        </div>
-    </a>
-    <a class="itemBox" href="Games/PumpkinGameRemix/pumpkintest.html">
-        <h1>Pumpkin Game Remix</h1>
-        <h6>Race the clock to destroy all the pumpkins</h6>
-        <div class="proLink">
-
+                <div class="proLink">
+                    <a href="Mini%20Projects/CSS_Practice/League%20Speed%20Page%20Challenge/index.html">
+                        <span>[View]</span>
+                    </a>
+                    <a href="https://github.com/ward-spacecase/Final-Portfolio/tree/master/Mini%20Projects/CSS_Practice/League%20Speed%20Page%20Challenge">
+                        <span>[Code]</span>
+                    </a>
+                </div>
+            </div>
         </div>
 
-    </a>
+    </div>
 
-    <a class="itemBox" href="https://github.com/ward-spacecase/Final-Portfolio/tree/master/Full%20Projects/Angular2%20Apps">
-        <h1>Other Projects</h1>
-        <h5>See Full Projects/Angular2 Apps/OtherProjects.txt</h5>
-        <div class="proLink">
+    <div class="portfolioContainer row">
+        <div class="col-lg-3 col-sm-6 each-col">
+            <div class="item-box">
 
+                <h1>Todo App</h1>
+                <h6>TODO app made with Angular 1 material design</h6>
+
+                <img src="images/todo.png" width="200px">
+
+
+                <div class="proLink">
+                    <a href="Full%20Projects/TodoAng1Material/index.html">
+                        <span>[View]</span>
+                    </a>
+                    <a href="https://github.com/ward-spacecase/Final-Portfolio/tree/master/Full%20Projects/TodoAng1Material">
+                        <span>[Code]</span>
+                    </a>
+                </div>
+            </div>
         </div>
 
-    </a>
+        <div class="col-lg-3 col-sm-6 each-col">
+            <div class="item-box">
+                <h1>Word Guess Game</h1>
+                <h6>Guess the word game made in jQuery</h6>
+
+                <img src="images/wordguess.png" width="200px">
+
+                <div class="proLink">
+                    <a href="Games/WordGuess/strings.html">
+                        <span>[View]</span>
+                    </a>
+                    <a href="https://github.com/ward-spacecase/Final-Portfolio/tree/master/Games/WordGuess">
+                        <span>[Code]</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 each-col">
+            <div class="item-box">
+                <h1>Santa Game</h1>
+                <h6>Choose who goes on the nice list in this game</h6>
+
+                <img src="images/santa.png" width="200px">
+
+                <div class="proLink">
+                    <a href="Games/Who'sBeenNaughty&Nice/game.html">
+                        <span>[View]</span>
+                    </a>
+                    <a href="https://github.com/ward-spacecase/Final-Portfolio/tree/master/Games/Who'sBeenNaughty%26Nice">
+                        <span>[Code]</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 each-col">
+            <div class="item-box">
+                <h1>Parallax Page</h1>
+                <h6>Made https://boostedboards.com/ into a parallax page</h6>
+
+                <img src="images/parallax.png" width="200px">
+
+                <div class="proLink">
+                    <a href="Mini%20Projects/CSS_Practice/Parallax%20Page%20Practice/index.html">
+                        <span>[View]</span>
+                    </a>
+                    <a href="https://github.com/ward-spacecase/Final-Portfolio/tree/master/Mini%20Projects/CSS_Practice/Parallax%20Page%20Practice">
+                        <span>[Code]</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 
-</div>
+    <div class="portfolioContainer row">
+        <div class="col-lg-3 col-sm-6 each-col">
+            <div class="item-box">
+
+                <h1>Pumpkin Game</h1>
+                <h6>Add and destroy pumpkins in this game</h6>
+
+                <img src="images/pumpkin.png" width="200px">
+
+                <div class="proLink">
+                    <a href="Games/PumpkinGame/pumpkinsboom.html">
+                        <span>[View]</span>
+                    </a>
+                    <a href="https://github.com/ward-spacecase/Final-Portfolio/tree/master/Games/PumpkinGame">
+                        <span>[Code]</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 each-col">
+            <div class="item-box">
+                <h1>Cash Royale</h1>
+                <h5>Finance app in Angular2 made at 24hr code camp</h5>
+
+                <img src="images/cashroyale.png" width="200px">
+
+                <div class="proLink">
+
+                        <span class="disabled">[View Unavailable]</span>
+
+                    <a href="https://github.com/joybob22/cashRoyale">
+                        <span>[Code]</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 each-col">
+            <div class="item-box">
+                <h1>Debateable</h1>
+                <h5>Political topics app in Ionic 2</h5>
+
+                <img src="images/debate.png" width="200px">
+
+
+                <div class="proLink">
+
+                        <span class="disabled">[View Unavailable]</span>
+
+                    <a href="https://github.com/Sam-Robertson/DebateApp">
+                        <span>[Code]</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 each-col">
+            <div class="item-box">
+                <h1>Contacts App</h1>
+                <h5>Contact management app made with MongoDB, Express, Angular2 & Node</h5>
+
+                <img src="images/contacts.png" width="200px">
+
+                <div class="proLink">
+
+                        <span class="disabled">[View Unavailable]</span>
+
+                    <a href="https://github.com/ward-spacecase/contactsApp">
+                        <span>[Code]</span>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
 </body>
 </html>
